@@ -1,0 +1,26 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#be2e33",
+    "activityBar.activeBorder": "#422c74",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#422c74",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#be2e33",
+    "titleBar.inactiveBackground": "#d3333399",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#962f2f",
+    "statusBarItem.hoverBackground": "#be2e33",
+    "statusBar.foreground": "#e7e7e7",
+    "panel.border": "#be2e33",
+    "sideBar.border": "#be2e33",
+    "editorGroup.border": "#be2e33"
+  },
+  "peacock.color": "#be2e33",
+  "azureFunctions.deploySubpath": "functions",
+  "azureFunctions.projectLanguage": "TypeScript",
+  "azureFunctions.projectRuntime": "~3",
+  "debug.internalConsoleOptions": "neverOpen",
+  "azureFunctions.preDeployTask": "npm prune"
+}

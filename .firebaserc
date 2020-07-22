@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-login-21248": {
+      "hosting": {
+        "BaseArchitectLoginBasicAxa": [
+          "angular-login-21248"
+        ]
+      }
+    }
+  }
+}

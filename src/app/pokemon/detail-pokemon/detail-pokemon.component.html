@@ -1,0 +1,7 @@
+<div class='card mt-4 text-center' *ngIf="pokemon !== null">
+  <div class='card-body'>
+  <img [src]='pokemon.sprites.front_default' className="img-fluid" alt=""/>
+      <div className='card-title text-uppercase'>{{pokemon.name}}</div>
+      <p className="card-text">Alto {{pokemon.height}} | Ancho: {{pokemon.weight}} </p>
+  </div>
+</div>

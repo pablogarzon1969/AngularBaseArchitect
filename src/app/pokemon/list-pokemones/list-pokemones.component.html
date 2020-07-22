@@ -1,0 +1,32 @@
+<h2>Pokemones</h2>
+<div class="alter alert-info text-center" role="alter" *ngIf="loading">
+  <h4 class="alter-heading">Cargando</h4>
+  <p>
+    <i class="fa fa-sync fa-spin fa-2x"></i>
+  </p>
+  <p class="mb-0"></p>
+</div>
+
+<div class="alter alert-danger text-center" role="alter" *ngIf="error">
+  <h4 class="alter-heading">Error</h4>
+  <pre> {{ error | json}}</pre>
+  <p class="mb-0"></p>
+</div>
+
+<div class='container-fluid content mt-5' *ngIf="!loading">
+  <div class="row mr-md-4">
+    <div class="col-md-6">
+      <ul class="list-group mt-3">
+        <li class="list-group-item" *ngFor="let pokemon of pokemones">{{pokemon.name}}
+
+          <button class="btn btn-dark btn-sm float-right" (click)="detallePokemon(pokemon.url)">
+            Info
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <app-detail-pokemon></app-detail-pokemon>
+    </div>
+  </div>
+</div>
