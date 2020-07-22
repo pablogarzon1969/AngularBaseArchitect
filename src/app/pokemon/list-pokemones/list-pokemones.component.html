@@ -19,7 +19,7 @@
       <ul class="list-group mt-3">
         <li class="list-group-item" *ngFor="let pokemon of pokemones">{{pokemon.name}}
 
-          <button class="btn btn-dark btn-sm float-right" (click)="detallePokemon(pokemon.url)">
+          <button name={{pokemon.name}} class="btn btn-dark btn-sm float-right" (click)="detallePokemon(pokemon.url)">
             Info
           </button>
         </li>

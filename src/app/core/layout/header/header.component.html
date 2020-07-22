@@ -16,13 +16,13 @@
         <a class="nav-link">Administration</a>
       </li>
       <li class="nav-item dropdown" *ngIf="cargando" >
-        <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown"
+        <a name="reports" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           Reports
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" routerLink="/reports">Report Operations</a>
-          <a class="dropdown-item" routerLink="/pokemon">Report pokemons</a>
+          <a name="reportoperation" class="dropdown-item" routerLink="/reports">Report Operations</a>
+          <a name="reportpokemon" class="dropdown-item" routerLink="/pokemon">Report pokemons</a>
           <a class="dropdown-item" >Report other</a>
         </div>
       </li>
@@ -31,7 +31,7 @@
       <div *ngIf="cargando">
         <span class="navbar-text mr-sm-2" *ngFor="let usu of usuario">Usuario: {{usu.username}}</span>
       </div>
-      <button class="btn btn-outline-success my-2 my-sm-0" *ngIf="cargando"  (click)="logout()" type="submit">Logout</button>
+      <button name="logout" class="btn btn-outline-success my-2 my-sm-0" *ngIf="cargando"  (click)="logout()" type="submit">Logout</button>
     </form>
   </div>
 </nav>
