@@ -10,6 +10,8 @@ import { Store } from '@ngrx/store';
 import { AppState } from '../../../store/reducers/app.reducer';
 import * as auth from '../../../store/actions/auth.actions';
 
+import { AuthFacade } from '../../../store/facade/auth.facade';
+
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -28,24 +30,24 @@ export class HeaderComponent implements OnInit {
   constructor(
     private authenticationService: AuthenticationService,
     private userService: UserService,
+    private authFacade: AuthFacade,
     private store: Store<AppState>
   ) {
-    this.uiSubscription = this.store.select(state => state.usuarios.users)
+      this.uiSubscription = authFacade.user$
       .subscribe(user => {
         this.usuario = user;
       });
   }
 
   ngOnInit(): void {
-    this.uiSubscription = this.store.select('user')
+      this.uiSubscription = this.authFacade.isLoadingUser$
       .subscribe(user => {
         this.cargando = user.isLoading;
       });
   }
 
   logout() {
-    this.store.dispatch(auth.loggedIn({ isLogin: false }));
+    this.authFacade.logout(false);
     this.authenticationService.logout();
   }
-
 }

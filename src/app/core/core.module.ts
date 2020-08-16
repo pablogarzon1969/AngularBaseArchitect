@@ -18,12 +18,14 @@ import { LayoutModule } from './layout/layout.module';
 // services
 import { AuthenticationService } from './auth/authentication.service';
 import { UserService } from './auth/user.service';
+import { AuthFacade } from '../store/facade/auth.facade';
+
 
 
 @NgModule({
   imports: [
     HttpClientModule,
-   /* RouterModule,*/
+    /* RouterModule,*/
     LayoutModule
   ],
   exports: [
@@ -35,6 +37,7 @@ import { UserService } from './auth/user.service';
     AuthGuard,
     AuthenticationService,
     UserService,
+    AuthFacade,
     { provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 

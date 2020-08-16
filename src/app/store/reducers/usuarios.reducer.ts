@@ -41,10 +41,6 @@ const usuariosInitialReducer = createReducer(usuariosInitialState,
       message: payload.message
     }
   })),
-
-
-
-
 );
 
 export function usuariosReducer(state, action) {
