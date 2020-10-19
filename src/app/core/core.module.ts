@@ -5,10 +5,10 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 //import { RouterModule } from '@angular/router';
 
 // guards
-import { AuthGuard } from './auth/auth.guard';
-import { fakeBackendProvider } from './auth/fake-backend';
-import { BasicAuthInterceptor } from './auth/basic-auth.interceptor';
-import { ErrorInterceptor } from './auth/error.interceptor';
+import { AuthGuard } from './auth.guard';
+import { fakeBackendProvider } from './fake-backend';
+import { BasicAuthInterceptor } from './interceptors/basic-auth.interceptor';
+import { ErrorInterceptor } from './interceptors/error.interceptor';
 
 
 // components
@@ -16,9 +16,9 @@ import { LayoutModule } from './layout/layout.module';
 
 
 // services
-import { AuthenticationService } from './auth/authentication.service';
-import { UserService } from './auth/user.service';
-import { AuthFacade } from '../store/facade/auth.facade';
+import { AuthenticationService } from './services/authentication.service';
+import { UserService } from './services/user.service';
+import { AuthFacade } from '../store/facade/auth/auth.facade';
 
 
 

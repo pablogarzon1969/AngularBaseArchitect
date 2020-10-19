@@ -1,17 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Subscription } from 'rxjs';
-import { take, switchMap } from 'rxjs/operators';
-
-import { PokemonFacade } from '../../store/facade/pokemon.facade';
-// import { Store } from '@ngrx/store';
-// import { AppState } from '../../store/reducers/app.reducer';
-
-import { PokemonService } from '../pokemon.service';
-
+import { PokemonFacade } from '../../store/facade/pokemon/pokemon.facade';
 import { Observable } from 'rxjs';
 import { Pokemon } from '../../models/pokemon.model';
-
 
 @Component({
   selector: 'app-detail-pokemon',
@@ -23,7 +13,7 @@ export class DetailPokemonComponent implements OnInit {
   public pokemon: Pokemon;
   public url: any;
   pokemonObs$: Observable<{}>;
-  constructor(/*private store: Store<AppState>,*/ private pokemonService: PokemonService, private pokemonFacade: PokemonFacade) {
+  constructor(private pokemonFacade: PokemonFacade) {
   }
 
   ngOnInit(): void {

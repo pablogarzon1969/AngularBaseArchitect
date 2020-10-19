@@ -2,10 +2,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 // import { PokemonService } from '../pokemon.service';
 import { ListPokemonesComponent } from './list-pokemones.component';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { Store } from '@ngrx/store';
 import { StoreModule } from '@ngrx/store';
 import { provideMockStore, MockStore } from '@ngrx/store/testing';
-import { PokemonFacade } from '../../store/facade/pokemon.facade';
+import { PokemonFacade } from '../../store/facade/pokemon/pokemon.facade';
+import { Store } from '@ngrx/store';
 
 describe('ListPokemonesComponent', () => {
   let component: ListPokemonesComponent;
@@ -41,21 +41,16 @@ describe('ListPokemonesComponent', () => {
     fixture.detectChanges();
   });
 
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
- /* it('should return a pokemon', () => {
-    storeMock.setState({ pokemon: 'pikachu' });
-  });*/
-
- /* it('should return a pokemons', () => {
-    storeMock.select('pokemon')
-      .subscribe(({ pokemon, loading, error }) => {
-        this.pokemones = pokemon;
-        this.loading = loading;
-        this.error = error;
-      });
-
-  });*/
+  describe('Test List Pokemons', () => {
+    it('show pokemon by Id', () => {
+      const facadePokemon = new PokemonFacade(storeMock);
+      const componentListPokemon = new ListPokemonesComponent(facadePokemon);
+      componentListPokemon.detallePokemon('Pikachu');
+    });
+  });
 });

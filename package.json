@@ -5,10 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test --code-coverage --browsers ChromeHeadless --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "compodoc": "npx compodoc -p tsconfig.base.json"
+    "compodoc": "npx compodoc -p tsconfig.base.json",
+    "sonar":"sonar-scanner"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +29,7 @@
     "chart.js": "^2.9.3",
     "firebase": "^7.13.1",
     "hammerjs": "^2.0.8",
+    "jasmine-marbles": "^0.6.0",
     "jquery": "^3.5.1",
     "ng2-charts": "^2.3.2",
     "popper.js": "^1.16.1",
@@ -56,11 +58,13 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "karma-sonarqube-unit-reporter": "0.0.21",
     "open": "^7.0.3",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.7",
-    "webpack-bundle-analyzer": "^3.8.0"
+    "webpack-bundle-analyzer": "^3.8.0",
+    "sonar-scanner":"3.1.0"
   }
 }

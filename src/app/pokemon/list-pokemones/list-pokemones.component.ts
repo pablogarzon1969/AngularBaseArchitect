@@ -1,20 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-
-import { Store } from '@ngrx/store';
-import { AppState } from '../../store/reducers/app.reducer';
-import * as pokemones from '../../store/actions/pokemones.actions';
-import * as pokemon from '../../store/actions/pokemon.actions';
-
-import { PokemonFacade } from '../../store/facade/pokemon.facade';
-
-import { PokemonService } from '../pokemon.service';
-import { cargarPokemones } from '../../store/actions/pokemones.actions';
-import { cargarPokemon } from '../../store/actions/pokemon.actions';
-
+import { PokemonFacade } from '../../store/facade/pokemon/pokemon.facade';
 import { Pokemones } from '../../models/pokemones.model';
-
 
 @Component({
   selector: 'app-list-pokemones',

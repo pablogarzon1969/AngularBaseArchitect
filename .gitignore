@@ -10,8 +10,18 @@
 # dependencies
 /node_modules
 
+# ---- SonarQube
+.sonar
+.scannerwork
+.sonar/
+.scannerwork/
+/.scannerwork/
+
 # Documentation Angular
 /documentation
+
+# Coverage Test Angular
+/coverage
 
 # profiling files
 chrome-profiler-events*.json

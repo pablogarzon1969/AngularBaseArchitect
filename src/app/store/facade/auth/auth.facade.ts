@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as auth from '../../store/actions/auth.actions';
-import * as usuarioAction from '../../store/actions/usuarios.actions';
-import { AppState } from '../../store/reducers/app.reducer';
+import * as auth from '../../actions/auth.actions';
+import * as usuarioAction from '../../actions/usuarios.actions';
+import { AppState } from '../../reducers/app.reducer';
 
 
-import { User } from '../../models/user';
+
+import { User } from '../../../models/user';
 
 @Injectable()
 export class AuthFacade {
@@ -24,7 +25,7 @@ export class AuthFacade {
     this.store.dispatch(auth.loggedIn({ isLogin }));
   }
 
-  cargarUsuario(users: User[]): void {
+  public cargarUsuario(users: User[]): void {
     this.store.dispatch(usuarioAction.cargarUsuariosSuccess({ usuarios: users }));
   }
 }

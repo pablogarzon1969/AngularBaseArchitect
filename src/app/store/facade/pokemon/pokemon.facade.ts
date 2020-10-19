@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as auth from '../../store/actions/auth.actions';
-import { AppState } from '../../store/reducers/app.reducer';
-import { cargarPokemones } from '../../store/actions/pokemones.actions';
-import * as pokemon from '../../store/actions/pokemon.actions';
+import * as auth from '../../actions/auth.actions';
+import { AppState } from '../../reducers/app.reducer';
+import { cargarPokemones } from '../../actions/pokemones.actions';
+import * as pokemon from '../../actions/pokemon.actions';
 
 
 @Injectable()

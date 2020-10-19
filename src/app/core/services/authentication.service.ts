@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 import { environment } from '../../../environments/environment';
 import { User } from '../../models/user';
 
-import { AuthFacade } from '../../store/facade/auth.facade';
+import { AuthFacade } from '../../store/facade/auth/auth.facade';
 
 @Injectable({ providedIn: 'root' })
 export class AuthenticationService {
@@ -35,6 +35,7 @@ export class AuthenticationService {
         user.authdata = window.btoa(username + ':' + password);
         localStorage.setItem('user', JSON.stringify(user));
         this.userSubject.next(user);
+        localStorage.setItem('isLoading', JSON.stringify(true));
         this.authFacade.loggedIn(true);
         return user;
       }));
@@ -43,6 +44,7 @@ export class AuthenticationService {
   logout() {
     // remove user from local storage to log user out
     localStorage.removeItem('user');
+    localStorage.removeItem('isLoading');
     this.userSubject.next(null);
     this.router.navigate(['/login']);
   }
