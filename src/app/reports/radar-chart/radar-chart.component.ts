@@ -34,8 +34,6 @@ export class RadarChartComponent implements OnInit {
     console.log(event, active);
   }
 
-
-
   ngOnInit(): void {
   }
 }

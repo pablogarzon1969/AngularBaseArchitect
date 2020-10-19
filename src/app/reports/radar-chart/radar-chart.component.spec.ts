@@ -8,9 +8,9 @@ describe('RadarChartComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RadarChartComponent ]
+      declarations: [RadarChartComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +19,7 @@ describe('RadarChartComponent', () => {
     fixture.detectChanges();
   });
 
- /* it('should create', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
-  });*/
+  });
 });

@@ -24,14 +24,6 @@ export class ListPokemonesComponent implements OnInit {
     this.pokemonFacade.loadPokemons();
   }
 
-  /**
- * @example
- * This is a good example
- * processTarget('yo')
- *
- * @param {string} target  The target to process see {@link Todo}
- * @returns The processed target number
- */
   detallePokemon(url: string): void {
     this.pokemonFacade.loadPokemon(url);
   }
