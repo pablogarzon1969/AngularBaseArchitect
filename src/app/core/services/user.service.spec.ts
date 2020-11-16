@@ -1,7 +1,6 @@
 import { async, TestBed, inject } from '@angular/core/testing';
-
 import { UserService } from './user.service';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { environment } from '../../../environments/environment';
 
@@ -16,7 +15,6 @@ describe('NotesComponent', () => {
     });
     service = TestBed.inject(UserService);
   }));
-
 
   it(`should issue a request users service`,
     // 1. declare as async test since the HttpClient works with Observables
@@ -40,8 +38,6 @@ describe('NotesComponent', () => {
       })
     )
   );
-
-
 
   it('should create', () => {
     expect(service).toBeTruthy();

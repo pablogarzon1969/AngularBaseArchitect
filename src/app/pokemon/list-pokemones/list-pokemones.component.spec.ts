@@ -33,8 +33,6 @@ describe('ListPokemonesComponent', () => {
   }));
 
 
-
-
   beforeEach(() => {
     fixture = TestBed.createComponent(ListPokemonesComponent);
     component = fixture.componentInstance;
