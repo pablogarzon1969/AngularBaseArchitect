@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as auth from '../../actions/auth.actions';
 import { AppState } from '../../reducers/app.reducer';
 import { cargarPokemones } from '../../actions/pokemones.actions';
 import * as pokemon from '../../actions/pokemon.actions';

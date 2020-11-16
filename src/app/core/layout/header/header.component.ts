@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { first } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
 
 import { AuthenticationService } from '../../services/authentication.service';
@@ -8,10 +7,8 @@ import { UserService } from '../../services/user.service';
 
 import { Usuario } from '../../../models/usuario.model';
 
-
 import { Store } from '@ngrx/store';
 import { AppState } from '../../../store/reducers/app.reducer';
-import * as auth from '../../../store/actions/auth.actions';
 import { AuthFacade } from '../../../store/facade/auth/auth.facade';
 
 @Component({

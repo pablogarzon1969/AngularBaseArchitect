@@ -5,8 +5,7 @@ import { Pokemon } from '../../models/pokemon.model';
 
 @Component({
   selector: 'app-detail-pokemon',
-  templateUrl: './detail-pokemon.component.html',
-  styleUrls: ['./detail-pokemon.component.css']
+  templateUrl: './detail-pokemon.component.html'
 })
 export class DetailPokemonComponent implements OnInit {
   uipokemonSubscription: any;

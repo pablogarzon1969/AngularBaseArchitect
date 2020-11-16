@@ -4,8 +4,7 @@ import { Pokemones } from '../../models/pokemones.model';
 
 @Component({
   selector: 'app-list-pokemones',
-  templateUrl: './list-pokemones.component.html',
-  styleUrls: ['./list-pokemones.component.css']
+  templateUrl: './list-pokemones.component.html'
 })
 export class ListPokemonesComponent implements OnInit {
   pokemones: Pokemones[] = [];

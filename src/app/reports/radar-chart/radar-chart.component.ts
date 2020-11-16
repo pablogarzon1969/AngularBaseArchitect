@@ -5,8 +5,7 @@ import { Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-radar-chart',
-  templateUrl: './radar-chart.component.html',
-  styleUrls: ['./radar-chart.component.css']
+  templateUrl: './radar-chart.component.html'
 })
 export class RadarChartComponent implements OnInit {
 
@@ -27,11 +26,9 @@ export class RadarChartComponent implements OnInit {
 
   // events
   public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
-    console.log(event, active);
   }
 
   public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
-    console.log(event, active);
   }
 
   ngOnInit(): void {

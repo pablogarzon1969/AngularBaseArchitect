@@ -1,4 +1,4 @@
-import { NgModule, Optional, SkipSelf, ErrorHandler } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 // modules
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';

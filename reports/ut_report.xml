@@ -1,23 +1,23 @@
 <testExecutions version="1">
-  <file path="src/app/store/facade/auth/auth.facade.spec.ts">
-    <testCase name="CustodiansComponent should dispatch loggedIn" duration="43"/>
-    <testCase name="CustodiansComponent should create" duration="8"/>
-  </file>
-  <file path="src/app/core/services/user.service.spec.ts">
-    <testCase name="NotesComponent should create" duration="21"/>
-    <testCase name="NotesComponent should issue a request users service" duration="20"/>
-  </file>
-  <file path="src/app/pokemon/list-pokemones/list-pokemones.component.spec.ts">
-    <testCase name="ListPokemonesComponent Test List Pokemons show pokemon by Id" duration="99"/>
-    <testCase name="ListPokemonesComponent should create" duration="14"/>
-  </file>
-  <file path="src/app/reports/radar-chart/radar-chart.component.spec.ts">
-    <testCase name="RadarChartComponent should create" duration="21"/>
-  </file>
   <file path="src/app/core/layout/footer/footer.component.spec.ts">
-    <testCase name="FooterComponent should create" duration="28"/>
+    <testCase name="FooterComponent should create" duration="11"/>
   </file>
   <file path="src/app/core/layout/layout/layout.component.spec.ts">
-    <testCase name="LayoutComponent should create" duration="21"/>
+    <testCase name="LayoutComponent should create" duration="12"/>
+  </file>
+  <file path="src/app/reports/radar-chart/radar-chart.component.spec.ts">
+    <testCase name="RadarChartComponent should create" duration="9"/>
+  </file>
+  <file path="src/app/pokemon/list-pokemones/list-pokemones.component.spec.ts">
+    <testCase name="ListPokemonesComponent should create" duration="30"/>
+    <testCase name="ListPokemonesComponent Test List Pokemons show pokemon by Id" duration="8"/>
+  </file>
+  <file path="src/app/core/services/user.service.spec.ts">
+    <testCase name="NotesComponent should create" duration="4"/>
+    <testCase name="NotesComponent should issue a request users service" duration="8"/>
+  </file>
+  <file path="src/app/store/facade/auth/auth.facade.spec.ts">
+    <testCase name="CustodiansComponent should create" duration="2"/>
+    <testCase name="CustodiansComponent should dispatch loggedIn" duration="2"/>
   </file>
 </testExecutions>
