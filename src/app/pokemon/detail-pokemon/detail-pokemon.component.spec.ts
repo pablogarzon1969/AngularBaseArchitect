@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { DetailPokemonComponent } from './detail-pokemon.component';
 import { PokemonFacade } from '../../store/facade/pokemon/pokemon.facade';
@@ -10,7 +10,7 @@ describe('DetailPokemonComponent', () => {
   let component: DetailPokemonComponent;
   let fixture: ComponentFixture<DetailPokemonComponent>;
   let storeMock: MockStore<any>;
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       providers: [
         PokemonFacade,
@@ -33,7 +33,7 @@ describe('DetailPokemonComponent', () => {
     fixture.detectChanges();
   });
 
- /* it('should create', () => {
+  /*it('should create', () => {
     expect(component).toBeTruthy();
   });*/
 });

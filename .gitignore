@@ -1,7 +1,10 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+bazel-*
+test-project-host-*
 /dist
+dist-schema/
 /tmp
 /out-tsc
 # Only exists if Bazel was run
@@ -38,22 +41,26 @@ speed-measure-plugin*.json
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+**/*.code-workspace
 .history/*
 
 # misc
 /.sass-cache
 /connect.lock
-/coverage
 /libpeerconnection.log
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-error.log*
+.ng_pkg_build/
+.ng-dev.log
+.ng-dev.user*
 testem.log
 /typings
+tmp/
 
 # System Files
 .DS_Store

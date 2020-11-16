@@ -1,4 +1,4 @@
-import { async, TestBed, inject } from '@angular/core/testing';
+import { TestBed, inject, waitForAsync } from '@angular/core/testing';
 import { UserService } from './user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
@@ -7,7 +7,7 @@ import { environment } from '../../../environments/environment';
 describe('NotesComponent', () => {
   let service: UserService;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
         HttpClientTestingModule,
@@ -18,7 +18,7 @@ describe('NotesComponent', () => {
 
   it(`should issue a request users service`,
     // 1. declare as async test since the HttpClient works with Observables
-    async(
+    waitForAsync(
       // 2. inject HttpClient and HttpTestingController into the test
       inject([HttpTestingController], (backend: HttpTestingController) => {
         // 3. send a simple request

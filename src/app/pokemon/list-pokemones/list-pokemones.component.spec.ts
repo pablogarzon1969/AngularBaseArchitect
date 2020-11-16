@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 // import { PokemonService } from '../pokemon.service';
 import { ListPokemonesComponent } from './list-pokemones.component';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
@@ -13,7 +13,7 @@ describe('ListPokemonesComponent', () => {
   // let service: PokemonService;
   let storeMock: MockStore<any>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       providers: [
         PokemonFacade,
