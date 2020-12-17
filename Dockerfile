@@ -10,7 +10,7 @@ COPY ./ /opt/base-architect
 WORKDIR /opt/base-architect
 # Install dependencies
 RUN npm install
-#Compile the angular 10 application
+#Compile the angular application
 RUN ng build --prod
 #Create image based on the official nginx image from dockerhub
 FROM nginx
