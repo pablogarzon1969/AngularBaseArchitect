@@ -6,7 +6,7 @@ import { AppState } from '../../reducers/app.reducer';
 
 
 
-import { User } from '../../../models/user';
+import { User } from '../../../shared/models/user.model';
 
 @Injectable()
 export class AuthFacade {

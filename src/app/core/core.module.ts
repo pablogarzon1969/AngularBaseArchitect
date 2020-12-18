@@ -2,10 +2,9 @@ import { NgModule } from '@angular/core';
 
 // modules
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-//import { RouterModule } from '@angular/router';
 
 // guards
-import { AuthGuard } from './auth.guard';
+import { AuthGuard } from './guards/auth.guard';
 import { fakeBackendProvider } from './fake-backend';
 import { BasicAuthInterceptor } from './interceptors/basic-auth.interceptor';
 import { ErrorInterceptor } from './interceptors/error.interceptor';

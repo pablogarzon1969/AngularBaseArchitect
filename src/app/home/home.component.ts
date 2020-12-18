@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 
 import { Router } from '@angular/router';
 
-import { User } from '../models/user';
+import { User } from '../shared/models/user.model';
 import { UserService } from '../core/services/user.service';
 import { AuthFacade } from '../store/facade/auth/auth.facade';
 

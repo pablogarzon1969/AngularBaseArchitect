@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonFacade } from '../../store/facade/pokemon/pokemon.facade';
 import { Observable } from 'rxjs';
-import { Pokemon } from '../../models/pokemon.model';
+import { Pokemon } from '../../shared/models/pokemon.model';
 
 @Component({
   selector: 'app-detail-pokemon',

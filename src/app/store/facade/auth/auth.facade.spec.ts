@@ -3,7 +3,7 @@ import { provideMockStore, MockStore } from '@ngrx/store/testing';
 import * as auth from '../../actions/auth.actions';
 import { cold } from 'jasmine-marbles';
 
-import { User } from '../../../models/user';
+import { User } from '../../../shared/models/user.model';
 
 describe('CustodiansComponent', () => {
   let store: MockStore;

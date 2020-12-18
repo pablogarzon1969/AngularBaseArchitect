@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { AuthenticationService } from '../../services/authentication.service';
-import { User } from '../../../models/user';
+import { User } from '../../../shared/models/user.model';
 import { UserService } from '../../services/user.service';
 
-import { Usuario } from '../../../models/usuario.model';
+import { Usuario } from '../../../shared/models/usuario.model';
 
 import { Store } from '@ngrx/store';
 import { AppState } from '../../../store/reducers/app.reducer';

@@ -1,7 +1,7 @@
 import { createReducer, on } from '@ngrx/store';
 import { cargarUsuarios, cargarUsuariosError, cargarUsuariosSuccess } from '../actions/usuarios.actions';
-import { Usuario } from '../../models/usuario.model';
-import { User } from '../../models/user';
+import { Usuario } from '../../shared/models/usuario.model';
+import { User } from '../../shared/models/user.model';
 
 export interface UsuariosState {
   users: User[];

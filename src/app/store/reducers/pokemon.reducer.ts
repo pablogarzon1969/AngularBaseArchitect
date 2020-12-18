@@ -1,6 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 import { cargarPokemon, cargarPokemonError, cargarPokemonSuccess } from '../actions/pokemon.actions';
-import { Pokemon } from '../../models/pokemon.model';
+import { Pokemon } from '../../shared/models/pokemon.model';
 
 export interface PokemonState {
   pokemon: Pokemon;
