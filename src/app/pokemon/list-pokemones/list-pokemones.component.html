@@ -22,8 +22,7 @@
   <div class="row mr-md-4">
     <div class="col-md-6">
       <ul class="list-group mt-3">
-        <li class="list-group-item" *ngFor="let pokemon of pokemones">{{pokemon.name}}
-
+        <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let pokemon of pokemones">{{pokemon.name}}
           <button name={{pokemon.name}} class="btn btn-dark btn-sm float-right" (click)="detallePokemon(pokemon.url)">
             Info
           </button>
