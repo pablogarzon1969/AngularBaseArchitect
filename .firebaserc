@@ -2,7 +2,7 @@
   "targets": {
     "angular-login-21248": {
       "hosting": {
-        "BaseArchitectLoginBasicAxa": [
+        "AngularBaseArchitect": [
           "angular-login-21248"
         ]
       }

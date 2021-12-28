@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChartsModule } from 'ng2-charts';
+import { NgChartsModule  } from 'ng2-charts';
 
 import { ReportsRoutingModule } from './reports-routing.module';
 
@@ -12,7 +12,7 @@ import { RadarChartComponent } from './radar-chart/radar-chart.component';
   imports: [
     CommonModule,
     ReportsRoutingModule,
-    ChartsModule
+    NgChartsModule 
   ]
 })
 export class ReportsModule { }

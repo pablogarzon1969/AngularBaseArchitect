@@ -1,8 +1,8 @@
 {
   "hosting": [
     {
-      "target": "BaseArchitectLoginBasicAxa",
-      "public": "dist/BaseArchitectLoginBasicAxa",
+      "target": "AngularBaseArchitect",
+      "public": "dist/AngularBaseArchitect",
       "ignore": [
         "**/.*"
       ],

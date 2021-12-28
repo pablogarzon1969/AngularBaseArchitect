@@ -18,7 +18,7 @@ COPY ./nginx.conf /etc/nginx/nginx.conf
 ## Remove default nginx index page
 RUN rm -rf /usr/share/nginx/html/*
 #Copy compiled application to nginx folder
-COPY --from=build /opt/base-architect/dist/BaseArchitectLoginBasicAxa /usr/share/nginx/html
+COPY --from=build /opt/base-architect/dist/AngularBaseArchitect /usr/share/nginx/html
 EXPOSE 4200 80
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
