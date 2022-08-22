@@ -14,7 +14,7 @@ export class AuthFacade {
   isLoadingUser$ = this.store.select('user');
 
   constructor(
-    private store: Store<AppState>
+    public store: Store<AppState>
   ) { }
 
   loggedIn(isLogin: boolean): void {
