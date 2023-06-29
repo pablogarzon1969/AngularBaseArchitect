@@ -78,7 +78,7 @@ export class RadarChartComponent implements OnInit {
       );*/
 
     const url =
-      'https://172.18.16.58:7482/famisanar-file-manager/v1/download?content=true&file=a60a9382-430a-4960-a3df-d18a44225c7e&token=c9773671-695b-4e38-90db-40cc63390e08';
+      'https://wildflyqa2.famisanar.com.co:7842/famisanar-file-manager/v1/download?content=true&file=a60a9382-430a-4960-a3df-d18a44225c7e&token=c9773671-695b-4e38-90db-40cc63390e08';
 
     return this.http.get(url, { responseType: 'blob' }).pipe(
       map((response: Blob) => {
